@@ -1,0 +1,23 @@
+restart.o ObjDepends/restart.do: restart.f90
+restart.o: kinds_mod.o
+restart.o: domain.o
+restart.o: constants.o
+restart.o: blocks.o
+restart.o: prognostic.o
+restart.o: broadcast.o
+restart.o: boundary.o
+restart.o: communicate.o
+restart.o: operators.o
+restart.o: grid.o
+restart.o: io.o
+restart.o: io_types.o
+restart.o: time_management.o
+restart.o: ice.o
+restart.o: forcing.o
+restart.o: forcing_ap.o
+restart.o: forcing_ws.o
+restart.o: forcing_shf.o
+restart.o: forcing_sfwf.o
+restart.o: forcing_pt_interior.o
+restart.o: forcing_s_interior.o
+restart.o: exit_mod.o

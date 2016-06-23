@@ -1,0 +1,19 @@
+horizontal_mix.o ObjDepends/horizontal_mix.do: horizontal_mix.f90
+horizontal_mix.o: kinds_mod.o
+horizontal_mix.o: blocks.o
+horizontal_mix.o: distribution.o
+horizontal_mix.o: domain.o
+horizontal_mix.o: constants.o
+horizontal_mix.o: communicate.o
+horizontal_mix.o: time_management.o
+horizontal_mix.o: broadcast.o
+horizontal_mix.o: grid.o
+horizontal_mix.o: io_types.o
+horizontal_mix.o: hmix_del2.o
+horizontal_mix.o: hmix_del4.o
+horizontal_mix.o: hmix_gm.o
+horizontal_mix.o: hmix_aniso.o
+horizontal_mix.o: topostress.o
+horizontal_mix.o: tavg.o
+horizontal_mix.o: timers.o
+horizontal_mix.o: exit_mod.o

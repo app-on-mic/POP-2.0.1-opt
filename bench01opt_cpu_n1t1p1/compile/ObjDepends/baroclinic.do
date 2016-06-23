@@ -1,0 +1,26 @@
+baroclinic.o ObjDepends/baroclinic.do: baroclinic.f90
+baroclinic.o: kinds_mod.o
+baroclinic.o: blocks.o
+baroclinic.o: domain.o
+baroclinic.o: constants.o
+baroclinic.o: prognostic.o
+baroclinic.o: broadcast.o
+baroclinic.o: boundary.o
+baroclinic.o: communicate.o
+baroclinic.o: grid.o
+baroclinic.o: advection.o
+baroclinic.o: pressure_grad.o
+baroclinic.o: horizontal_mix.o
+baroclinic.o: vertical_mix.o
+baroclinic.o: vmix_kpp.o
+baroclinic.o: diagnostics.o
+baroclinic.o: state_mod.o
+baroclinic.o: ice.o
+baroclinic.o: time_management.o
+baroclinic.o: io_types.o
+baroclinic.o: tavg.o
+baroclinic.o: forcing.o
+baroclinic.o: forcing_shf.o
+baroclinic.o: forcing_pt_interior.o
+baroclinic.o: forcing_s_interior.o
+baroclinic.o: exit_mod.o

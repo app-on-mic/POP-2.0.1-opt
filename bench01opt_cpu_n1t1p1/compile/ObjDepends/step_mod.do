@@ -1,0 +1,20 @@
+step_mod.o ObjDepends/step_mod.do: step_mod.f90
+step_mod.o: kinds_mod.o
+step_mod.o: blocks.o
+step_mod.o: domain.o
+step_mod.o: constants.o
+step_mod.o: prognostic.o
+step_mod.o: boundary.o
+step_mod.o: timers.o
+step_mod.o: grid.o
+step_mod.o: diagnostics.o
+step_mod.o: state_mod.o
+step_mod.o: time_management.o
+step_mod.o: xdisplay.o
+step_mod.o: baroclinic.o
+step_mod.o: barotropic.o
+step_mod.o: surface_hgt.o
+step_mod.o: tavg.o
+step_mod.o: forcing.o
+step_mod.o: forcing_coupled.o
+step_mod.o: ice.o

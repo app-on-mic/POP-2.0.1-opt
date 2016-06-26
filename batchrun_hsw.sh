@@ -72,7 +72,7 @@ for NP in $PROCLIST; do
 sed -i 's/nprocs_clinic = .*/nprocs_clinic = '"$NP"'/g;s/nprocs_tropic = .*/nprocs_tropic = '"$NP"'/g; ' pop_in
 
 ((CPU_N=NP))
-(CPU_T=1)
+((CPU_T=1))
 EXCL_LIST=`gen_excl_list "localhost"`
 
 mpirun -n ${NP} -env OMP_NUM_THREADS=1 -env I_MPI_PIN_PROCESSOR_LIST=allcores:map=bunch -env I_MPI_PIN_PROCESSOR_EXCLUDE_LIST=${EXLC_LIST} ./pop.${EXT}.p${NP} |& tee pop_${EXT}_p${NP}.log
